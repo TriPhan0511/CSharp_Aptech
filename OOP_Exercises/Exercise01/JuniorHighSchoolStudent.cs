@@ -11,6 +11,10 @@ namespace Exercise01
         private double physicMark;
         private double chemistryMark;
 
+        public JuniorHighSchoolStudent()
+        {
+        }
+
         public JuniorHighSchoolStudent(string id, string name, int age,
             double mathMark, double literatureMark, double englishMark,
             double physicMark, double chemistryMark) : base(id, name, mathMark, literatureMark, englishMark)

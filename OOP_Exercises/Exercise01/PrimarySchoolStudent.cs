@@ -8,6 +8,10 @@ namespace Exercise01
 {
     internal class PrimarySchoolStudent : Student
     {
+        public PrimarySchoolStudent()
+        {
+        }
+
         public PrimarySchoolStudent(string id, string name, int age,
             double mathMark, double literatureMark, double englishMark) : base(id, name, mathMark, literatureMark, englishMark)
         {

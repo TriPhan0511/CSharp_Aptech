@@ -13,6 +13,10 @@ namespace Exercise01
         private double computerScienceMark;
         private double frenchMark;
 
+        public HighSchoolStudent()
+        {
+        }
+
         public HighSchoolStudent(string id, string name, int age,
             double mathMark, double literatureMark, double englishMark,
             double physicMark, double chemistryMark, double computerScienceMark,
