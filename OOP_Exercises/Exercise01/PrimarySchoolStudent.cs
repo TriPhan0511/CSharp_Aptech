@@ -27,5 +27,15 @@ namespace Exercise01
                 SetAge(age);
             }
         }
+
+        public override double CalculateAverageMark()
+        {
+            return (GetMathMark() + GetLiteratureMark() + GetEnglishMark()) / 3;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $" - Average mark: {CalculateAverageMark()}";
+        }
     }
 }

@@ -34,6 +34,23 @@ namespace Exercise01
             SetChemistryMark(chemistryMark);
         }
 
+
+        public override double CalculateAverageMark()
+        {
+            return (GetMathMark() + GetLiteratureMark() + GetEnglishMark() 
+                + GetPhysicMark() + GetChemistryMark()) / 5;
+        }
+
+        public double GetChemistryMark()
+        {
+            return this.chemistryMark;
+        }
+
+        public double GetPhysicMark()
+        {
+            return this.physicMark;
+        }
+
         private void SetChemistryMark(double chemistryMark)
         {
             if (chemistryMark < 0.0 || chemistryMark > 10.0)
@@ -58,11 +75,11 @@ namespace Exercise01
             }
         }
 
-        override
-        public string ToString()
+        public override string ToString()
         {
-            string s = base.ToString();
-            return s + $" - Physic: {this.physicMark} - Chemistry: {this.chemistryMark}";
+            return base.ToString()
+                + $" - Physic: {this.physicMark} - Chemistry: {this.chemistryMark}"
+                + $" - Average mark: {CalculateAverageMark()}"; 
         }
     }
 }

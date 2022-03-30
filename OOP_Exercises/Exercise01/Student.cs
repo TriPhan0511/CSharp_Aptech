@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Exercise01
 {
-    internal class Student
+    internal abstract class Student
     {
-        private string id;
+        private string id; 
         private string name;
         private int age;
         private double mathMark;
@@ -17,13 +17,31 @@ namespace Exercise01
 
         public Student() { }
 
-        public Student(string id, string name, double mathMark, double literatureMark, double englishMark)
+        public Student(string id, string name,
+            double mathMark, double literatureMark, double englishMark)
         {
             this.id = id;
             this.name = name;
             SetMathMark(mathMark);
             SetLiteratureMark(literatureMark);
             SetEnglishMark(englishMark);
+        }
+
+        public abstract double CalculateAverageMark();
+
+        public double GetMathMark()
+        {
+            return this.mathMark;
+        }
+
+        public double GetLiteratureMark()
+        {
+            return this.literatureMark;
+        }
+
+        public double GetEnglishMark()
+        {
+            return this.englishMark;
         }
 
         public void SetEnglishMark(double englishMark)
@@ -65,8 +83,8 @@ namespace Exercise01
             this.age = age;
         }
 
-        override
-        public string ToString()
+        
+        public override string ToString()
         {
             return $"ID: {this.id}" +
                 $" - Name: {this.name}" +
@@ -74,6 +92,7 @@ namespace Exercise01
                 $" - Math: {this.mathMark}" +
                 $" - Literature: {this.literatureMark}" +
                 $" - English: {this.englishMark}";
+                
         }
     }
 }

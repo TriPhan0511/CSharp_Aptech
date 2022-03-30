@@ -40,6 +40,34 @@ namespace Exercise01
             SetFrenchMark(frenchMark);
         }
 
+        public override double CalculateAverageMark()
+        {
+            return (GetMathMark() + GetLiteratureMark() + GetEnglishMark() 
+                + GetPhysicMark() + GetChemistry() + GetComputerScienceMark()
+                + GetFrenchMark()) / 7;
+        }
+
+        private double GetFrenchMark()
+        {
+            return this.frenchMark;
+        }
+
+        private double GetComputerScienceMark()
+        {
+            return this.computerScienceMark;
+        }
+
+        private double GetChemistry()
+        {
+            return this.chemistryMark;
+        }
+
+        private double GetPhysicMark()
+        {
+            return this.physicMark;
+        }
+
+
         private void SetFrenchMark(double frenchMark)
         {
             if (frenchMark < 0.0 || frenchMark > 10.0)
@@ -88,12 +116,15 @@ namespace Exercise01
             }
         }
 
-        override
-        public string ToString()
+        
+        public override string ToString()
         {
-            string s = base.ToString();
-            return s + $" - Physic: {this.physicMark} - Chemistry: {this.chemistryMark}" 
-                + $" - Computer Science: {this.computerScienceMark} - French: {this.frenchMark}";
+            return base.ToString() 
+                + $" - Physic: {this.physicMark} - Chemistry: {this.chemistryMark}" 
+                + $" - Computer Science: {this.computerScienceMark} - French: {this.frenchMark}"
+                + $" - Average mark: {CalculateAverageMark()}"; 
         }
+
+        
     }
 }

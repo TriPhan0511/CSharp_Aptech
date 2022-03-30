@@ -16,12 +16,12 @@ namespace Exercise01
 
         private void Run()
         {
-            //// Declare an array contaning PrimarySchoolStudent instances
-            //PrimarySchoolStudent[] primarySchoolStudents = new PrimarySchoolStudent[2];
-            //// Get data for the primarySchoolStudents
-            //ReadAnArrayOfPrimarySchoolStudents(primarySchoolStudents);
-            //// Display the content of an array containing PrimarySchoolStudent instances
-            //displayStudents(primarySchoolStudents);
+            // Declare an array contaning PrimarySchoolStudent instances
+            PrimarySchoolStudent[] primarySchoolStudents = new PrimarySchoolStudent[2];
+            // Get data for the primarySchoolStudents
+            ReadAnArrayOfPrimarySchoolStudents(primarySchoolStudents);
+            // Display the content of an array containing PrimarySchoolStudent instances
+            displayStudents(primarySchoolStudents);
 
             //// Declare an array contaning JuniorHighSchoolStudent instances
             //JuniorHighSchoolStudent[] juniorHighSchoolStudents = new JuniorHighSchoolStudent[2];
@@ -30,12 +30,12 @@ namespace Exercise01
             //// Display the content of an array containing JuniorHighSchoolStudent instances
             //displayStudents(juniorHighSchoolStudents);
 
-            // Declare an array contaning JuniorHighSchoolStudent instances
-            HighSchoolStudent[] highSchoolStudents = new HighSchoolStudent[2];
-            // Get data for the primarySchoolStudents
-            ReadAnArrayOfHighSchoolStudents(highSchoolStudents);
-            // Display the content of an array containing JuniorHighSchoolStudent instances
-            displayStudents(highSchoolStudents);
+            //// Declare an array contaning JuniorHighSchoolStudent instances
+            //HighSchoolStudent[] highSchoolStudents = new HighSchoolStudent[2];
+            //// Get data for the primarySchoolStudents
+            //ReadAnArrayOfHighSchoolStudents(highSchoolStudents);
+            //// Display the content of an array containing JuniorHighSchoolStudent instances
+            //displayStudents(highSchoolStudents);
         }
 
         private void ReadAnArrayOfHighSchoolStudents(HighSchoolStudent[] highSchoolStudents)
@@ -221,81 +221,6 @@ namespace Exercise01
             }
 
             return tempID;
-        }
-
-        private void Run2()
-        {
-            //// Initialize a Student instance
-            //string id = "stu001";
-            //string name = "Alex";
-            ////double mathMark = -1.0;
-            ////double literatureMark = 11.0;
-            //double mathMark = 0.0;
-            //double literatureMark = 10.0;
-            //double englishMark = 5.5;
-            ////Student student = new Student(id, name, mathMark, literatureMark, englishMark);
-            ////Console.WriteLine(student);
-
-            //// Initialize a PrimarySchoolStudent instance
-            //string id = "stu001";
-            //string name = "Alex";
-            ////double mathMark = -1.0;
-            ////double literatureMark = 11.0;
-            //double mathMark = 0.0;
-            //double literatureMark = 10.0;
-            //double englishMark = 5.5;
-
-            ////int age = -1;
-            ////int age = 0;
-            ////int age = 11;
-            //int age = 8;
-            //Student student = new PrimarySchoolStudent(id, name, age, mathMark, literatureMark, englishMark);
-            //Console.WriteLine(student);
-
-            //// Initialize a Junior High School instance
-            //string id = "stu001";
-            //string name = "Alex";
-            ////double mathMark = -1.0;
-            ////double literatureMark = 11.0;
-            //double mathMark = 0.0;
-            //double literatureMark = 10.0;
-            //double englishMark = 5.5;
-
-            ////int age = -1;
-            ////int age = 0;
-            ////int age = 8;
-            //int age = 14;
-
-            //double physicMark = 5.0;
-            //double chemistryMark = 9.0;
-            //Student student = new JuniorHighSchoolStudent(id, name, age, mathMark, 
-            //    literatureMark, englishMark, physicMark, chemistryMark);
-            //Console.WriteLine(student);
-
-            // Initialize a High School instance
-            string id = "stu001";
-            string name = "Alex";
-            //double mathMark = -1.0;
-            //double literatureMark = 11.0;
-            double mathMark = 0.0;
-            double literatureMark = 10.0;
-            double englishMark = 5.5;
-
-            //int age = -1;
-            //int age = 0;
-            //int age = 8;
-            //int age = 14;
-            int age = 17;
-
-            double physicMark = 5.0;
-            double chemistryMark = 9.0;
-
-            double computerScienceMark = 7.5;
-            double frenchMark = 5.5;
-
-            Student student = new HighSchoolStudent(id, name, age, mathMark,
-                literatureMark, englishMark, physicMark, chemistryMark, computerScienceMark, frenchMark);
-            Console.WriteLine(student);
         }
     }
 }
