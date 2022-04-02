@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{060B02BE-B403-4AC9-AFCC-69866027A306}</ProjectGuid>
+    <ProjectGuid>{BBA25631-4611-4894-A89F-A283B214E2BD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PropertiesSamples</RootNamespace>
-    <AssemblyName>PropertiesSamples</AssemblyName>
+    <RootNamespace>Exercise01_version2</RootNamespace>
+    <AssemblyName>Exercise01_version2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
+    <Compile Include="ArrayTesting.cs" />
+    <Compile Include="HighSchoolStudent.cs" />
+    <Compile Include="JuniorHighSchoolStudent.cs" />
+    <Compile Include="PrimarySchoolStudent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimePeriod.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentHandler.cs" />
+    <Compile Include="StudentsManagement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

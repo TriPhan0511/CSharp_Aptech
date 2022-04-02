@@ -1,8 +1,0 @@
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\bin\Debug\PropertiesSamples.exe.config
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\bin\Debug\PropertiesSamples.exe
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\bin\Debug\PropertiesSamples.pdb
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\obj\Debug\PropertiesSamples.csproj.AssemblyReference.cache
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\obj\Debug\PropertiesSamples.csproj.SuggestedBindingRedirects.cache
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\obj\Debug\PropertiesSamples.csproj.CoreCompileInputs.cache
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\obj\Debug\PropertiesSamples.exe
-D:\Studying\dotnet\CSharp_Aptech\OOP_Exercises\PropertiesSamples\obj\Debug\PropertiesSamples.pdb
