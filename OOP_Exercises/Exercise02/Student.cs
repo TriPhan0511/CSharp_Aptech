@@ -8,21 +8,29 @@ namespace Exercise02
 {
     internal class Student
     {
-        private int id;
-        private string name;
-        private string phoneNumber;
-        private string address;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Address { get; set; }
 
+        // The default constructor
         public Student()
         {
         }
 
+        // A parameterized constructor
         public Student(int id, string name, string phoneNumber, string address)
         {
-            this.id = id;
-            this.name = name;
-            this.phoneNumber = phoneNumber;
-            this.address = address;
+            Id = id;
+            Name = name;
+            PhoneNumber = phoneNumber;
+            Address = address;
+        }
+
+        // Override the ToString method
+        public override string ToString()
+        {
+            return $"ID: {Id} - Name: {Name} - Phone Number: {PhoneNumber} - Address: {Address}";
         }
     }
 }
