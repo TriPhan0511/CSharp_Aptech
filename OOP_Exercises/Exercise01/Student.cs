@@ -6,93 +6,42 @@ using System.Threading.Tasks;
 
 namespace Exercise01
 {
-    internal abstract class Student
+    internal class Student
     {
-        private string id; 
-        private string name;
-        private int age;
-        private double mathMark;
-        private double literatureMark;
-        private double englishMark;
+        // Properties
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public double MathMark { get; set; }
+        public double LiteratureMark { get; set; }
+        public double EnglishMark { get; set; }
+        public double AverageMark
+        {
+            get { return (MathMark + LiteratureMark + EnglishMark) / 3; }
+        }
 
-        public Student() { }
+        // The default constructor
+        public Student()
+        {
+        }
 
-        public Student(string id, string name,
+        // A parameterized constructor
+        public Student(string id, string name, int age, 
             double mathMark, double literatureMark, double englishMark)
         {
-            this.id = id;
-            this.name = name;
-            SetMathMark(mathMark);
-            SetLiteratureMark(literatureMark);
-            SetEnglishMark(englishMark);
+            Id = id;
+            Name = name;
+            Age = age;
+            MathMark = mathMark;
+            LiteratureMark = literatureMark;
+            EnglishMark = englishMark;
         }
 
-        public abstract double CalculateAverageMark();
-
-        public double GetMathMark()
-        {
-            return this.mathMark;
-        }
-
-        public double GetLiteratureMark()
-        {
-            return this.literatureMark;
-        }
-
-        public double GetEnglishMark()
-        {
-            return this.englishMark;
-        }
-
-        public void SetEnglishMark(double englishMark)
-        {
-            if (englishMark < 0.0 || englishMark > 10.0)
-            {
-                this.englishMark = 0.0;
-            }
-            else
-            {
-                this.englishMark = englishMark;
-            }
-        }
-        public void SetLiteratureMark(double literatureMark)
-        {
-            if (literatureMark < 0.0 || literatureMark > 10.0)
-            {
-                this.literatureMark = 0.0;
-            }
-            else
-            {
-                this.literatureMark = literatureMark;
-            }
-        }
-        public void SetMathMark(double mathMark)
-        {
-            if (mathMark < 0.0 || mathMark > 10.0)
-            {
-                this.mathMark = 0.0;
-            }
-            else
-            {
-                this.mathMark = mathMark;
-            }
-        }
-
-        public void SetAge(int age)
-        {
-            this.age = age;
-        }
-
-        
         public override string ToString()
         {
-            return $"ID: {this.id}" +
-                $" - Name: {this.name}" +
-                $" - Age: {this.age}" +
-                $" - Math: {this.mathMark}" +
-                $" - Literature: {this.literatureMark}" +
-                $" - English: {this.englishMark}";
-                
+            return $"ID: {Id} - Name: {Name} - Age: {Age}\n\t" +
+                $"Math: {MathMark} - Literature: {LiteratureMark} - English: {EnglishMark}\n\t" +
+                $"Average Mark: {AverageMark:F2}";
         }
     }
 }

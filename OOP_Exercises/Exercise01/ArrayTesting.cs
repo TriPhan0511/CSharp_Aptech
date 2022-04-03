@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercise01_version2
+namespace Exercise01
 {
     internal class ArrayTesting
     {
-        private PrimarySchoolStudent[] students1;
-        private JuniorHighSchoolStudent[] students2;
-        private HighSchoolStudent[] students3;
+        private PrimarySchoolStudent[] primarySchoolStudents;
+        private JuniorHighSchoolStudent[] juniorHighSchoolStudents;
+        private HighSchoolStudent[] highSchoolStudents;
 
-        public static void DisplayOptions()
+        public void DisplayOptions()
         {
             char choice;
             do
@@ -26,22 +26,28 @@ namespace Exercise01_version2
                 Console.WriteLine("5. Display the array containing the junior high school students");
                 Console.WriteLine("6. Display the array containing the high school students");
                 Console.WriteLine("7. Exit");
-                choice = ReadChar("Enter your choice: ");
+                choice = Utils.ReadChar("Enter your choice: ");
                 switch (choice)
                 {
                     case '1':
-                        Console.Write("One");
+                        primarySchoolStudents = StudentsManagement.CreateAnArrayOfPrimarySchoolStudent();
                         break;
                     case '2':
-                        Console.Write("Two");
+                        juniorHighSchoolStudents = StudentsManagement.CreateAnArrayOfJuniorHighSchoolStudent();
                         break;
                     case '3':
-                        Console.Write("Three");
+                        highSchoolStudents = StudentsManagement.CreateAnArrayOfHighSchoolStudent();
                         break;
                     case '4':
-                        Console.Write("Four");
+                        StudentsManagement.DisplayAnArrayOfStudents(primarySchoolStudents);
                         break;
                     case '5':
+                        StudentsManagement.DisplayAnArrayOfStudents(juniorHighSchoolStudents);
+                        break;
+                    case '6':
+                        StudentsManagement.DisplayAnArrayOfStudents(highSchoolStudents);
+                        break;
+                    case '7':
                         Console.Write("Goodbye");
                         break;
                     default:
@@ -49,17 +55,6 @@ namespace Exercise01_version2
                         break;
                 }
             } while (choice != '7');
-
-            
-        }
-
-        private static char ReadChar(string prompt)
-        {
-            char choice;
-            Console.Write(prompt);
-            string s = Console.ReadLine();
-            choice = s[0];
-            return choice;
         }
     }
 }

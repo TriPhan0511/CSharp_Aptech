@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercise01_version2
+namespace Exercise01
 {
     internal class StudentsManagement
     {
@@ -78,7 +78,7 @@ namespace Exercise01_version2
         // Display content of an array containing Student type objects
         public static void DisplayAnArrayOfStudents(Student[] students)
         {
-            if (students.Length == 0)
+            if (students == null || students.Length == 0)
             {
                 Console.WriteLine("An empty array. Nothing to display.");
             }

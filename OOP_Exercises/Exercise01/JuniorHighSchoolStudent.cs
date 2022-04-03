@@ -8,78 +8,70 @@ namespace Exercise01
 {
     internal class JuniorHighSchoolStudent : Student
     {
-        private double physicMark;
-        private double chemistryMark;
+        // A junior high school student should have an age between 11 and 15.
+        // If the entered age is less than 11, the age will be set to 11.
+        // If the entered age is greater than 15, the age will be set to 15.
+        private int age;
+        public new int Age
+        {
+            get { return age; }
+            set
+            {
+                if (value < 11)
+                {
+                    age = 11;
+                }
+                else if (value > 15)
+                {
+                    age = 15;
+                }
+                else
+                {
+                    age = value;
+                }
+            }
+        }
 
+        // Two specific properties: physic mark and chemistry mark
+        public double PhysicMark { get; set; }
+        public double ChemistryMark { get; set; }
+
+        // Override the AverageMark property
+        public new double AverageMark
+        {
+            get
+            {
+                return (MathMark + LiteratureMark + EnglishMark + PhysicMark + ChemistryMark) / 5;
+            }
+        }
+
+        // The default constructor
         public JuniorHighSchoolStudent()
         {
         }
 
+        // A parameterized constructor
         public JuniorHighSchoolStudent(string id, string name, int age,
             double mathMark, double literatureMark, double englishMark,
-            double physicMark, double chemistryMark) : base(id, name, mathMark, literatureMark, englishMark)
+            double physicMark, double chemistryMark)
         {
-            // A junior high school student should has an age between 11 and 15
-            // if the entered age is less than 11 or greater than 15,
-            // the age will be set to 11.
-            if (age < 11 || age > 15)
-            {
-                SetAge(11);
-            }
-            else
-            {
-                SetAge(age);
-            }
-            SetPhysicMark(physicMark);
-            SetChemistryMark(chemistryMark);
+            Id = id;
+            Name = name;
+            Age = age;
+            MathMark = mathMark;
+            LiteratureMark = literatureMark;
+            EnglishMark = englishMark;
+            PhysicMark = physicMark;
+            ChemistryMark = chemistryMark;
         }
 
-
-        public override double CalculateAverageMark()
-        {
-            return (GetMathMark() + GetLiteratureMark() + GetEnglishMark() 
-                + GetPhysicMark() + GetChemistryMark()) / 5;
-        }
-
-        public double GetChemistryMark()
-        {
-            return this.chemistryMark;
-        }
-
-        public double GetPhysicMark()
-        {
-            return this.physicMark;
-        }
-
-        private void SetChemistryMark(double chemistryMark)
-        {
-            if (chemistryMark < 0.0 || chemistryMark > 10.0)
-            {
-                this.chemistryMark = 0.0;
-            }
-            else
-            {
-                this.chemistryMark = chemistryMark;
-            }
-        }
-
-        private void SetPhysicMark(double physicMark)
-        {
-            if (physicMark < 0.0 || physicMark > 10.0)
-            {
-                this.physicMark = 0.0;
-            }
-            else
-            {
-                this.physicMark = physicMark;
-            }
-        }
-
+        // Override the ToString method
         public override string ToString()
         {
-            return base.ToString()
-                + $" - Physic: {this.physicMark} - Chemistry: {this.chemistryMark}"
-                + $" - Average mark: {CalculateAverageMark()}"; 
+            return $"ID: {Id} - Name: {Name} - Age: {Age}\n\t" +
+                $"Math: {MathMark} - Literature: {LiteratureMark} - English: {EnglishMark}\n\t" +
+                $"Physic: {PhysicMark} - Chemistry: {ChemistryMark}\n\t" +
+                $"Average Mark: {AverageMark:F2}";
         }
     }
 }

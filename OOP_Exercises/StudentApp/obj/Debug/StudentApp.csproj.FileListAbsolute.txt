@@ -1,8 +1,0 @@
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\bin\Debug\StudentApp.exe.config
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\bin\Debug\StudentApp.exe
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\bin\Debug\StudentApp.pdb
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\obj\Debug\StudentApp.csproj.AssemblyReference.cache
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\obj\Debug\StudentApp.csproj.SuggestedBindingRedirects.cache
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\obj\Debug\StudentApp.csproj.CoreCompileInputs.cache
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\obj\Debug\StudentApp.exe
-D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\StudentApp\obj\Debug\StudentApp.pdb

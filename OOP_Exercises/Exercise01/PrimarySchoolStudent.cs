@@ -8,34 +8,55 @@ namespace Exercise01
 {
     internal class PrimarySchoolStudent : Student
     {
+        // A primary school student should have an age between 6 and 10.
+        // If the entered age is less than 6, the age will be set to 6.
+        // If the entered age is greater than 10, the age will be set to 10.
+        private int age;
+        public new int Age
+        {
+            get { return age; }
+            set
+            {
+                if (value < 6)
+                {
+                    age = 6;
+                }
+                else if (value > 10)
+                {
+                    age = 10;
+                }
+                else
+                {
+                    age = value;
+                }
+            }
+        }
+
+        // The default constructor
         public PrimarySchoolStudent()
         {
         }
 
+        //  A parameterized constructor
         public PrimarySchoolStudent(string id, string name, int age,
-            double mathMark, double literatureMark, double englishMark) : base(id, name, mathMark, literatureMark, englishMark)
+            double mathMark, double literatureMark, double englishMark)
         {
-            // A primary school student should has an age between 6 and 10
-            // if the entered age is less than 6 or greater than 10,
-            // the age will be set to 6.
-            if (age < 6 || age > 10)
-            {
-                SetAge(6);
-            }
-            else
-            {
-                SetAge(age);
-            }
+            Id = id;
+            Name = name;
+            Age = age; 
+            MathMark = mathMark;
+            LiteratureMark = literatureMark;
+            EnglishMark = englishMark;
         }
 
-        public override double CalculateAverageMark()
-        {
-            return (GetMathMark() + GetLiteratureMark() + GetEnglishMark()) / 3;
-        }
-
+        // Override the ToString method
         public override string ToString()
         {
-            return base.ToString() + $" - Average mark: {CalculateAverageMark()}";
+            return $"ID: {Id} - Name: {Name} - Age: {Age}\n\t" +
+                $"Math: {MathMark} - Literature: {LiteratureMark} - English: {EnglishMark}\n\t" +
+                $"Average Mark: {AverageMark:F2}";
         }
+
+
     }
 }
