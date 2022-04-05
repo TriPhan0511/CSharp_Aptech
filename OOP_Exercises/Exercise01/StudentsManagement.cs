@@ -13,7 +13,7 @@ namespace Exercise01
         {
             int size = ReadASizeOfAnArray("Enter a size of array: ");
             var students = new PrimarySchoolStudent[size];
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < students.Length; i++)
             {
                 students[i] = StudentHandler.ReadAPrimarySchoolStudent();
             }
@@ -25,7 +25,7 @@ namespace Exercise01
         {
             int size = ReadASizeOfAnArray("Enter a size of array: ");
             var students = new JuniorHighSchoolStudent[size];
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < students.Length; i++)
             {
                 students[i] = StudentHandler.ReadAJuniorHighSchoolStudent();
             }
@@ -37,7 +37,7 @@ namespace Exercise01
         {
             int size = ReadASizeOfAnArray("Enter a size of array: ");
             var students = new HighSchoolStudent[size];
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < students.Length; i++)
             {
                 students[i] = StudentHandler.ReadAHighSchoolStudent();
             }
@@ -51,26 +51,16 @@ namespace Exercise01
             int size;
             while (true)
             {
-                try
+                size = Utils.ReadInt(prompt);
+                if (size < 1)
                 {
-                    Console.Write(prompt);
-                    size = int.Parse(Console.ReadLine());
-                    if (size < 1)
-                    {
-                        Console.WriteLine("You should enter a whole number which is greater than 1.\n" +
-                            "Please try again.");
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("Wrong input. You should enter a whole number which is greater than 1.\n" +
+                    Console.WriteLine("You should enter a whole number which is equal to or greater than 1.\n" +
                         "Please try again.");
                 }
-                
+                else
+                {
+                    break;
+                }
             }
             return size;
         }

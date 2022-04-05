@@ -8,7 +8,7 @@ namespace Exercise02
 {
     internal class Student
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
@@ -19,7 +19,7 @@ namespace Exercise02
         }
 
         // A parameterized constructor
-        public Student(int id, string name, string phoneNumber, string address)
+        public Student(string id, string name, string phoneNumber, string address)
         {
             Id = id;
             Name = name;

@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\bin\Debug\Testing.exe.config
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\bin\Debug\Testing.exe
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\bin\Debug\Testing.pdb
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\obj\Debug\Testing.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\obj\Debug\Testing.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\obj\Debug\Testing.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\obj\Debug\Testing.exe
+D:\Studying\DotNet\CSharp_Aptech\OOP_Exercises\Testing\obj\Debug\Testing.pdb
