@@ -96,8 +96,28 @@ namespace List_Sample
             //Console.WriteLine(index); // 5
             /////-------------------------------------------------------------------------------
 
-            // Sort a List
-            // The Sort method of List<T> sorts all item of a List using the QuickSort algorithm
+            //// Sort a List
+            //// The Sort method of List<T> sorts all item of a List using the QuickSort algorithm
+            //List<string> authors = new List<string>();
+            //authors.Add("Mahes Chand");
+            //authors.Add("Chris Love");
+            //authors.Add("Allen O'neil");
+            //authors.Add("Naveen Sharma");
+            //authors.Add("Mahesh Chand");
+            //authors.Add("Monica Rathbun");
+            //authors.Add("David McCarter");
+            //Console.WriteLine("Original List:\n");
+            //DisplayAuthors(authors);
+            //Console.WriteLine("\n-----------------------------------");
+
+            //// Sort List's items
+            //authors.Sort();
+            //Console.WriteLine("\nAfter soring\n");
+            //DisplayAuthors(authors);
+            /////-------------------------------------------------------------------------------
+
+            // Reverse a List
+            // The Reverse method of List<T> reverses the order of all items in a List.
             List<string> authors = new List<string>();
             authors.Add("Mahes Chand");
             authors.Add("Chris Love");
@@ -110,9 +130,9 @@ namespace List_Sample
             DisplayAuthors(authors);
             Console.WriteLine("\n-----------------------------------");
 
-            // Sort List's items
-            authors.Sort();
-            Console.WriteLine("\nAfter soring\n");
+            authors.Reverse();
+
+            Console.WriteLine("\nAfter reverse:");
             DisplayAuthors(authors);
         }
 
