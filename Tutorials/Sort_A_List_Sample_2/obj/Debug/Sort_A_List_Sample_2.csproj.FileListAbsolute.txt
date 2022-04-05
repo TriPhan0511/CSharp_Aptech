@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\bin\Debug\Sort_A_List_Sample_2.exe.config
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\bin\Debug\Sort_A_List_Sample_2.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\bin\Debug\Sort_A_List_Sample_2.pdb
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\obj\Debug\Sort_A_List_Sample_2.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\obj\Debug\Sort_A_List_Sample_2.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\obj\Debug\Sort_A_List_Sample_2.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\obj\Debug\Sort_A_List_Sample_2.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Sort_A_List_Sample_2\obj\Debug\Sort_A_List_Sample_2.pdb

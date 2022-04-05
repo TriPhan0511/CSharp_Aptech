@@ -27,31 +27,6 @@ namespace Sort_A_List_Sample
             return $"ID: {PartId} Name: {PartName}";
         }
 
-        // Implement interface member IComparable.CompareTo(Part)
-        // Default comparer for Part type
-        public int CompareTo(Part comparePart)
-        {
-            // A null value means that this object is greater
-            if (comparePart == null)
-            {
-                return 1;
-            }
-            else
-            {
-                return this.PartId.CompareTo(comparePart.PartId);
-            }
-        }
-
-        // Implement interface member IEquatable.Equals(Part)
-        public bool Equals(Part other)
-        {
-            if (other == null)
-            {
-                return false;
-            }
-            return (this.PartId.Equals(other.PartId));
-        }
-
         // Override the base class implementation of Equals(Object)
         public override bool Equals(object obj)
         {
@@ -70,10 +45,35 @@ namespace Sort_A_List_Sample
             }
         }
 
+        // Implement interface member IComparable.CompareTo(Part)
+        // Default comparer for Part type
+        public int CompareTo(Part comparePart)
+        {
+            // A null value means that this object is greater
+            if (comparePart == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return this.PartId.CompareTo(comparePart.PartId);
+            }
+        }
+
         // Override the base class implementation of GetHashCode() 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return PartId;
+        }
+
+        // Implement interface member IEquatable.Equals(Part)
+        public bool Equals(Part other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            return (this.PartId.Equals(other.PartId));
         }
     }
     internal class Example1
