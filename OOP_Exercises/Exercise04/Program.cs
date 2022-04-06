@@ -33,9 +33,9 @@ namespace Exercise04
                 Console.WriteLine("\n-----Welcome to Book Management Application!-----\n");
                 Console.WriteLine("1. Add a new book.");
                 Console.WriteLine("2. Display the list of books.");
-                Console.WriteLine("3. Arrange the books based on author's name and display.");
-                Console.WriteLine("4. Arrange the books based on title and display.");
-                Console.WriteLine("5. Arrange the books based on publish year and display.");
+                Console.WriteLine("3. Sort the books based on author's name and display.");
+                Console.WriteLine("4. Sort the books based on title and display.");
+                Console.WriteLine("5. Sort the books based on publish year and display.");
                 Console.WriteLine("6. Update a book based on ISBN.");
                 Console.WriteLine("7. Remove a book based on ISBN.");
                 Console.WriteLine("8. Exit");
@@ -43,21 +43,29 @@ namespace Exercise04
                 switch (choice)
                 {
                     case '1':
-                        AddANewBook();
+                        //AddANewBook();
+                        InitializeBookList(bookList);
                         break;
                     case '2':
                         bookList.Display();
                         break;
                     case '3':
+                        bookList.SortBooksBasedOnAuthor();
+                        bookList.Display();
                         break;
                     case '4':
+                        bookList.SortBooksBasedOnTitle();
+                        bookList.Display();
                         break;
                     case '5':
+                        bookList.SortBooksBasedOnPublishYear();
+                        bookList.Display();
                         break;
                     case '6':
+                        UpdateABook();
                         break;
                     case '7':
-                        Console.Write("Goodbye");
+                        RemoveABook();
                         break;
                     case '8':
                         Console.WriteLine("Goodbye");
@@ -69,24 +77,141 @@ namespace Exercise04
             } while (choice != '8');
         }
 
+        // Remove a book from the list.
+        private void RemoveABook()
+        {
+            Console.WriteLine("\nPlease enter the ISBN of the book you want to remove:");
+            string isbn = ReadISBNForUpdatingOrRemoving("ISBN", "e");
+            if (isbn == null)
+            {
+                Console.WriteLine("The removing was cancelled.");
+            }
+            else
+            {
+                if (bookList.RemoveBook(isbn))
+                {
+                    Console.WriteLine($"The book whose ISBN is {isbn} was removed from the list.");
+                }
+            }
+        }
+
+        // Update a book
+        private void UpdateABook()
+        {
+            Console.WriteLine("\nPlease enter information about the book:");
+            string isbn = ReadISBNForUpdatingOrRemoving("ISBN", "e");
+            if (isbn == null)
+            {
+                Console.WriteLine("The updating was cancelled.");
+            }
+            else
+            {
+                string title = Utils.ReadString("Title: ");
+                string author = Utils.ReadString("Author: ");
+                string publisher = Utils.ReadString("Publisher: ");
+                int year = Utils.ReadInt("Publish Year: ");
+                List<string> chapters = ReadChapters();
+                if (bookList.UpdateBook(new Book()
+                {
+                    Title = title,
+                    Author = author,
+                    Publisher = publisher,
+                    Year = year,
+                    ISBN = isbn,
+                    Chapters = chapters
+                }))
+                {
+                    Console.WriteLine($"The book, whose ISBN is {isbn} was updated.");
+                }
+            }
+            
+        }
+
+        // Helper method to read ISBN from user input
+        // and ensure the entered ISBN exists in the list.
+        private string ReadISBNForUpdatingOrRemoving(string prompt, string escape)
+        {
+            string isbn;
+            while (true)
+            {
+                isbn = Utils.ReadString(prompt + $" (Press {escape} to escape the process): ");
+                if (String.Equals(isbn, escape, StringComparison.OrdinalIgnoreCase))
+                {
+                    return null;
+                }
+                else
+                {
+                    if (bookList.Search(isbn) == -1)
+                    {
+                        Console.WriteLine($"There are no book, whose ISBN is {isbn}, exists in the list. Please enter another isbn.");
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+            return isbn;
+        }
+
+        // Add a new book
         private void AddANewBook()
         {
             Console.WriteLine("\nPlease enter information about the book:");
-            string isbn = ReadISBN("ISBN: ");
-            string title = Utils.ReadString("Title: ");
-            string author = Utils.ReadString("Author: ");
-            string publisher = Utils.ReadString("Publisher: ");
-            int year = Utils.ReadInt("Publish Year: ");
-            List<string> chapters = ReadChapters();
-            bookList.AddBook(new Book()
+            string isbn = ReadISBNForAdding("ISBN", "e");
+            if (isbn == null)
             {
-                Title = title,
-                Author = author,
-                Publisher = publisher,
-                Year = year,
-                ISBN = isbn,
-                Chapters = chapters
-            });
+                Console.WriteLine("The adding was cancelled.");
+            }
+            else
+            {
+                string title = Utils.ReadString("Title: ");
+                string author = Utils.ReadString("Author: ");
+                string publisher = Utils.ReadString("Publisher: ");
+                int year = Utils.ReadInt("Publish Year: ");
+                List<string> chapters = ReadChapters();
+                if (bookList.AddBook(new Book()
+                {
+                    Title = title,
+                    Author = author,
+                    Publisher = publisher,
+                    Year = year,
+                    ISBN = isbn,
+                    Chapters = chapters
+                }))
+                {
+                    Console.WriteLine("A new book was added.");
+                }
+            }
+            
+        }
+
+        // Helper method to read ISBN from user input
+        // and ensure the entered ISBN does not exist in the list.
+        private string ReadISBNForAdding(string prompt, string escape)
+        {
+            string isbn;
+            while (true)
+            {
+                isbn = Utils.ReadString(prompt + $" (Press {escape} to escape adding a new book): ");
+                if (String.Equals(isbn, escape, StringComparison.OrdinalIgnoreCase))
+                {
+                    return null;
+                }
+                else
+                {
+                    if (bookList.Search(isbn) != -1)
+                    {
+                        Console.WriteLine("This isbn exists in the list. Please enter another isbn.");
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                
+            }
+            return isbn;
         }
 
         // Helper method to read chapters from user input
@@ -106,30 +231,12 @@ namespace Exercise04
             return chapters;
         }
 
-        // Helper method to read ISBN from user input
-        private string ReadISBN(string prompt)
-        {
-            string isbn;
-            while (true)
-            {
-                isbn = Utils.ReadString(prompt);
-                if (bookList.Search(isbn) != -1)
-                {
-                    Console.WriteLine("This isbn exists in the list. Please enter another isbn.");
-                }
-                else
-                {
-                    break;
-                }
-            }
-            return isbn;
-        }
-
+        // Dummy data
         private static void InitializeBookList(BookList bookList)
         {
             Book book1 = new Book()
             {
-                Title = "Title 1",
+                Title = "Zoo Zoo",
                 Author = "Alex Ferguson",
                 Publisher = "Publisher 1",
                 Year = 1984,
@@ -138,7 +245,7 @@ namespace Exercise04
             };
             Book book2 = new Book()
             {
-                Title = "Title 2",
+                Title = "Yonve David",
                 Author = "Brad Pit",
                 Publisher = "Publisher 2",
                 Year = 2021,
@@ -147,7 +254,7 @@ namespace Exercise04
             };
             Book book3 = new Book()
             {
-                Title = "Title 3",
+                Title = "Beautiful Sunday",
                 Author = "Chris Peter",
                 Publisher = "Publisher 3",
                 Year = 1999,
@@ -173,39 +280,12 @@ namespace Exercise04
                 Chapters = new List<string>() { "Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7" }
             };
 
-            bookList.AddBook(book1);
+            bookList.AddBook(book5);
             bookList.AddBook(book2);
             bookList.AddBook(book3);
+            bookList.AddBook(book1);
             bookList.AddBook(book4);
-            bookList.AddBook(book5);
+            
         }
-
-        //static void Main(string[] args)
-        //{
-        //    //List<string> list = new List<string>();
-        //    //string s1 = "ABc";
-        //    //string s2 = "def";
-        //    //string s3 = "XYZ";
-        //    //list.Add(s1.ToLower());
-        //    //list.Add(s2.ToLower());
-        //    //list.Add(s3.ToLower());
-        //    //Console.WriteLine(list.Contains("abc".ToLower())); // True
-        //    //Console.WriteLine(list.Contains("Abc".ToLower())); // True
-
-        //    //string s1 = "abcD";
-        //    //string s2 = "Abcd";
-        //    //bool b = String.Equals(s1, s2, StringComparison.OrdinalIgnoreCase);
-        //    //Console.WriteLine(b);
-
-        //    List<string> list = new List<string>() { "Alex", "Peter", "Chris" };
-        //    //Console.WriteLine(list[0]);
-        //    //Console.WriteLine(list[1]);
-        //    //Console.WriteLine(list[2]);
-
-        //    list.ForEach(x => Console.WriteLine(x));
-
-        //    list[0] = "Zozo";
-        //    list.ForEach((x) => Console.WriteLine(x));
-        //}
     }
 }
