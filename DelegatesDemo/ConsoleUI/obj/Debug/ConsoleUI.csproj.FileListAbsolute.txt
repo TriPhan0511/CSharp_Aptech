@@ -1,0 +1,11 @@
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\obj\Debug\ConsoleUI.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\obj\Debug\ConsoleUI.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\bin\Debug\ConsoleUI.exe
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\bin\Debug\ConsoleUI.pdb
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\obj\Debug\ConsoleUI.exe
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\obj\Debug\ConsoleUI.pdb
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\bin\Debug\DemoLibrary2.dll
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\bin\Debug\DemoLibrary2.pdb
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete

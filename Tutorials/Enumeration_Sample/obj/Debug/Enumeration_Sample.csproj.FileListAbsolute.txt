@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\obj\Debug\Enumeration_Sample.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\obj\Debug\Enumeration_Sample.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\obj\Debug\Enumeration_Sample.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\bin\Debug\Enumeration_Sample.exe.config
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\bin\Debug\Enumeration_Sample.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\bin\Debug\Enumeration_Sample.pdb
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\obj\Debug\Enumeration_Sample.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Enumeration_Sample\obj\Debug\Enumeration_Sample.pdb

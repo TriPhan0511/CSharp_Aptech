@@ -1,0 +1,3 @@
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\DemoLibrary\obj\Debug\DemoLibrary.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\DemoLibrary\obj\Debug\DemoLibrary.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\DelegatesDemo\DemoLibrary\obj\Debug\DemoLibrary.csproj.CoreCompileInputs.cache

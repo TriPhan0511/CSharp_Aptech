@@ -20,14 +20,33 @@ namespace Sort_A_List_Sample
     {
         public string PartName { get; set; }
         public int PartId { get; set; }
-
-        // Override the ToString() method
-        public override string ToString()
+		
+		// Implement interface member IEquatable.Equals(Part)
+        public bool Equals(Part other)
         {
-            return $"ID: {PartId} Name: {PartName}";
+            if (other == null)
+            {
+                return false;
+            }
+            return (this.PartId.Equals(other.PartId));
         }
-
-        // Override the base class implementation of Equals(Object)
+		
+		// Implement interface member IComparable.CompareTo(Part)
+        // Default comparer for Part type
+        public int CompareTo(Part comparePart)
+        {
+            // A null value means that this object is greater
+            if (comparePart == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return this.PartId.CompareTo(comparePart.PartId);
+            }
+        }
+		
+		// Override the base class implementation of Equals(Object)
         public override bool Equals(object obj)
         {
             if (obj == null)
@@ -44,37 +63,18 @@ namespace Sort_A_List_Sample
                 return Equals(objAsPart);
             }
         }
-
-        // Implement interface member IComparable.CompareTo(Part)
-        // Default comparer for Part type
-        public int CompareTo(Part comparePart)
-        {
-            // A null value means that this object is greater
-            if (comparePart == null)
-            {
-                return 1;
-            }
-            else
-            {
-                return this.PartId.CompareTo(comparePart.PartId);
-            }
-        }
-
-        // Override the base class implementation of GetHashCode() 
+		
+		// Override the base class implementation of GetHashCode() 
         public override int GetHashCode()
         {
             return PartId;
         }
 
-        // Implement interface member IEquatable.Equals(Part)
-        public bool Equals(Part other)
+        // Override the ToString() method
+        public override string ToString()
         {
-            if (other == null)
-            {
-                return false;
-            }
-            return (this.PartId.Equals(other.PartId));
-        }
+            return $"ID: {PartId} Name: {PartName}";
+        }                        
     }
     internal class Example1
     {

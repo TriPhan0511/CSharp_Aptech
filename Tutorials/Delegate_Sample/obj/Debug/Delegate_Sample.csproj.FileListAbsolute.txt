@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\bin\Debug\Delegate_Sample.exe.config
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\bin\Debug\Delegate_Sample.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\bin\Debug\Delegate_Sample.pdb
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\obj\Debug\Delegate_Sample.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\obj\Debug\Delegate_Sample.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\obj\Debug\Delegate_Sample.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\obj\Debug\Delegate_Sample.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Delegate_Sample\obj\Debug\Delegate_Sample.pdb
