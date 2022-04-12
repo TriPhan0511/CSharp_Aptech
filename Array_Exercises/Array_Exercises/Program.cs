@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Array_Exercise_01
+namespace Array_Exercises
 {
     internal class Program
     {
@@ -86,7 +86,7 @@ namespace Array_Exercise_01
         }
 
         // Find the maximum value and the position of that value
-        private (int,int) FindMaxValueAndItsPosition(int[] numbers)
+        private (int, int) FindMaxValueAndItsPosition(int[] numbers)
         {
             int maxValue = numbers[0];
             int positionOfMaxValue = 0;
@@ -165,7 +165,7 @@ namespace Array_Exercise_01
         // Display the content of an integer array
         private void DisplayIntArray(int[] numbers)
         {
-            
+
             Console.WriteLine("The content of the array:");
             foreach (int i in numbers)
             {

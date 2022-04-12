@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\bin\Debug\Array_Students.exe.config
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\bin\Debug\Array_Students.exe
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\bin\Debug\Array_Students.pdb
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\obj\Debug\Array_Students.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\obj\Debug\Array_Students.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\obj\Debug\Array_Students.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\obj\Debug\Array_Students.exe
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Students\obj\Debug\Array_Students.pdb

@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\bin\Debug\Multidimensional_Arrays_Samples.exe.config
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\bin\Debug\Multidimensional_Arrays_Samples.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\bin\Debug\Multidimensional_Arrays_Samples.pdb
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\obj\Debug\Multidimensional_Arrays_Sample.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\obj\Debug\Multidimensional_Arrays_Sample.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\obj\Debug\Multidimensional_Arrays_Sample.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\obj\Debug\Multidimensional_Arrays_Samples.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\Multidimensional_Arrays_Samples\obj\Debug\Multidimensional_Arrays_Samples.pdb

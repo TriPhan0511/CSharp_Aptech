@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime_Sample", "DateTime
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumeration_Sample", "Enumeration_Sample\Enumeration_Sample.csproj", "{57512EDD-03A6-4DFE-AB30-868B1939D5B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multidimensional_Arrays_Sample", "Multidimensional_Arrays_Samples\Multidimensional_Arrays_Sample.csproj", "{36A485B6-97A5-414E-9AAD-2DDECDBC1784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{57512EDD-03A6-4DFE-AB30-868B1939D5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57512EDD-03A6-4DFE-AB30-868B1939D5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57512EDD-03A6-4DFE-AB30-868B1939D5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A485B6-97A5-414E-9AAD-2DDECDBC1784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A485B6-97A5-414E-9AAD-2DDECDBC1784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A485B6-97A5-414E-9AAD-2DDECDBC1784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A485B6-97A5-414E-9AAD-2DDECDBC1784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

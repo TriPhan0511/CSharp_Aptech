@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\bin\Debug\Array_Exercises.exe.config
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\bin\Debug\Array_Exercises.exe
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\bin\Debug\Array_Exercises.pdb
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\obj\Debug\Array_Exercises.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\obj\Debug\Array_Exercises.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\obj\Debug\Array_Exercises.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\obj\Debug\Array_Exercises.exe
+D:\Studying\DotNet\CSharp_Aptech\Array_Exercises\Array_Exercises\obj\Debug\Array_Exercises.pdb
