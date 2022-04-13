@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Exercises 1-6
 namespace Array_Exercises
 {
     internal class Program
