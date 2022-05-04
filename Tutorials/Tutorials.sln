@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumeration_Sample", "Enume
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multidimensional_Arrays_Sample", "Multidimensional_Arrays_Samples\Multidimensional_Arrays_Sample.csproj", "{36A485B6-97A5-414E-9AAD-2DDECDBC1784}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ref_and_out_keywords_sample", "ref_and_out_keywords_sample\ref_and_out_keywords_sample.csproj", "{02352F82-6529-4DE3-8F8F-8B6CD60B0432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception_Handling_Sample", "Exception_Handling_Sample\Exception_Handling_Sample.csproj", "{A15559F7-68C5-4FFB-B783-CD8D5D9B9A55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{36A485B6-97A5-414E-9AAD-2DDECDBC1784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36A485B6-97A5-414E-9AAD-2DDECDBC1784}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36A485B6-97A5-414E-9AAD-2DDECDBC1784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02352F82-6529-4DE3-8F8F-8B6CD60B0432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02352F82-6529-4DE3-8F8F-8B6CD60B0432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02352F82-6529-4DE3-8F8F-8B6CD60B0432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02352F82-6529-4DE3-8F8F-8B6CD60B0432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15559F7-68C5-4FFB-B783-CD8D5D9B9A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15559F7-68C5-4FFB-B783-CD8D5D9B9A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15559F7-68C5-4FFB-B783-CD8D5D9B9A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15559F7-68C5-4FFB-B783-CD8D5D9B9A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

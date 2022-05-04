@@ -1,0 +1,8 @@
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\bin\Debug\ref_and_out_keywords_sample.exe.config
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\bin\Debug\ref_and_out_keywords_sample.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\bin\Debug\ref_and_out_keywords_sample.pdb
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\obj\Debug\ref_and_out_keywords_sample.csproj.AssemblyReference.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\obj\Debug\ref_and_out_keywords_sample.csproj.SuggestedBindingRedirects.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\obj\Debug\ref_and_out_keywords_sample.csproj.CoreCompileInputs.cache
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\obj\Debug\ref_and_out_keywords_sample.exe
+D:\Studying\DotNet\CSharp_Aptech\Tutorials\ref_and_out_keywords_sample\obj\Debug\ref_and_out_keywords_sample.pdb
